@@ -1,0 +1,114 @@
+body
+{
+    margin: auto;
+    width: 55%;
+    background-color: lightgreen;
+}
+main
+{
+    grid-template-areas:
+    'header header'
+    'botleft botright' ;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+footer
+{
+    display: none;
+}
+h1
+{
+    color: hsl(189, 73%, 54%);
+}
+h2
+{
+    color: white;
+}
+p
+{
+    color: white;
+}
+#pfull
+{
+    margin-top: 3px;
+    padding-top: 0;
+    opacity: 80%;
+}
+#pdollar
+{
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+#botright p
+{
+    line-height: 1.9em;
+}
+#join
+{
+    padding: 20px;
+}
+#pgris
+{
+    color: grey;
+}
+#h2principal
+{
+    color: hsl(71, 73%, 54%);
+}
+#all
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+#header
+{
+    background-color: whitesmoke;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    border-radius: 5px 5px 0 0;
+}
+#botleft
+{
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 5px;
+    
+}
+#sub
+{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#botright
+{
+    padding: 20px;
+    background-color: cyan;
+    border-radius: 0 0 4px 0;
+}
+#sub button
+{
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px 5px 5px 5px;
+    border: none;
+    color: white;
+    padding: 12px;
+    margin-top: 20px;
+    
+}
+#dollar
+{
+    font-size: 32px;
+}
+#permonth
+{
+    opacity: 80%;
+}
+@media (max-width: 800px)
+{
+     main {grid-template-areas:
+    'header'
+    'botleft'
+    'botright';
+}}
+
